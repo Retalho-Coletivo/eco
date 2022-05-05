@@ -1,316 +1,277 @@
-
 @font-face {
-    font-family: "EcoTypo";
-    src: url("../font/EcoTypo.otf") 
+  font-family: "EcoTypo";
+  src: url("../font/EcoTypo.otf");
 }
 
 * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    
-  }
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#apresentacao {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  padding: 0 50px;
+}
+#image-container {
+  padding-bottom: 20px;
+  min-width: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+#dalios {
+  vertical-align: bottom;
+  width: 95%;
+  height: auto;
+}
+#tera-container {
+  max-width: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#tera {
+  width: 85%;
+  height: auto;
+}
+#tonia {
+  width: 95%;
+  height: auto;
+}
+#titulo {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 28px;
+}
+#texto {
+  padding-left: 0px;
+  text-align: justify;
+}
+#line {
+  margin: 0 auto;
+  display: none;
+  background-color: black;
+  width: 99%;
+  height: 5px;
+}
+#ficha-composicao {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
+  max-width: 950px;
+  margin: 0 auto;
+}
+#ficha-tecnica {
+  background: url("../img/background_red.png");
+  background-repeat: norepeat;
+  background-position: top;
+  background-attachment: scroll;
+  width: 100%;
+  margin: 0px auto;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  padding: 200px 50px 50px;
+}
+#ficha-titulo {
+  color: #ededed;
+  text-align: center;
+  font-size: 28px;
+}
+#ficha-texto {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 450px;
+  color: #ededed;
+}
+#ficha-texto b {
+  font-weight: 500;
+}
+#logos {
+  padding: 50px 0;
+  width: 350px;
+  height: auto;
+  margin: 0px auto;
+}
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.cell {
+  min-height: 75px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+#isvs-2-2 {
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#im9i {
+  color: black;
+  width: 600px;
+}
+#titulo-eco {
+  text-align: left;
+  padding: 20px 0px 30px 10px;
+  font-size: 135px;
+  font-weight: 700;
+  font-family: EcoTypo;
+  line-height: 110px;
+}
+#il64c {
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 10px;
+  color: #7b361e;
+}
+#i1vs {
+  text-align: left;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#i5kh {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+  bottom: auto;
+  padding: 0 0 15px 10px;
+  letter-spacing: 3px;
+}
+#i6b2n {
+  text-align: center;
+  justify-content: center;
+  padding: 100px 10px 10px 10px;
+}
+#ijcs {
+  max-width: 600px;
+}
+#io11a {
+  font-family: "Montserrat Alternates", sans-serif;
+  display: none;
+}
+#ifkv3 {
+  text-align: left;
+  padding: 20px 0px 30px 0px;
+  font-size: 90px;
+  font-weight: 700;
+  font-family: EcoTypo;
+  line-height: 90px;
+  display: none;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  #ijcs {
+    overflow: hidden;
+  }
+  #im9i {
+    width: 112%;
+    position: relative;
+    right: 12%;
+  }
   #apresentacao {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-
-    max-width:950px;
-    margin: 0 auto;
-    font-family:'Montserrat Alternates', sans-serif;
-    font-size:16px;
-    padding:0 50px;
-    
+    flex-wrap: wrap !important;
+    padding: 0 20px;
   }
-
-  #image-container{
-    padding-bottom:20px;
-    min-width:400px;
-    display:flex;
-    align-items:flex-end;
+  #image-container {
+    justify-content: center;
+    padding: 0 !important;
+    padding-top: 40px !important;
+    min-width: 300px;
   }
-
-  #dalios {
-    
-    vertical-align:bottom;
-    width:95%;
-    height:auto;
+  #line {
+    display: block;
   }
-  #tera-container{
-    max-width:300px;
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-end
-  }
-  #tera{
-    
-    width:85%;
-    height:auto;
-  }
-
-  #tonia{
-    
-    width:95%;
-    height:auto;
-  }
-
   #titulo {
-    padding-left:0px;
-    text-align: left;
-    font-size: 28px;
-  }
-  
-  #texto {
-    padding-left:0px;
-    
-    text-align:justify;
-    
-  }
-
-  #line{
-    
-    margin:0 auto;
-    display:none;
-    
-    background-color:black;
-    width:99%;
-    height:5px;
-
-  }
-  #ficha-composicao {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-
-    max-width:950px;
-    margin: 0 auto;
-
-  }
-  #ficha-tecnica{
-    background:url('../img/background_red.png');
-    background-repeat:norepeat;
-    background-position:top;
-    background-attachment:scroll;
-
-    width:100%;
-    
-    
-    margin: 0px auto;
-    font-family:'Montserrat Alternates', sans-serif;
-    font-size:16px;
-    padding:200px 50px 50px;
-
-  }
-  #ficha-titulo{
-    color:#ededed;
     text-align: center;
-    font-size: 28px;
   }
-  #ficha-texto{
-    margin:0 auto;
-    
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    width:450px;
-    color:#ededed;
+  #texto {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  #ficha-tecnica {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #ficha-texto {
+    width: 98%;
+  }
+  #ficha-texto div {
+    padding-left: 10px;
+    max-width: 170px;
+  }
+  #logos {
+    width: 90%;
+    padding-bottom: 10px !important;
   }
 
-  #ficha-texto b{
-    font-weight:500;
+  #titulo-eco {
+    font-size: 110px;
+    text-align: center;
+    line-height: 70px;
+    display: none;
   }
-
-  #logos{
-    padding:50px 0;
-    width: 350px;
-    height: auto;
-    margin:0px auto;
+  #il64c {
+    display: none;
   }
-  .row{
-    display:flex;
-    justify-content:flex-start;
-    align-items:stretch;
-    flex-wrap:nowrap;
-    padding:10px;
+  #i5kh {
+    letter-spacing: 2px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
   }
-  .cell{
-    min-height:75px;
-    flex-grow:1;
-    flex-basis:100%;
+  #i6b2n {
+    padding: 20px 0px 0px 0px;
+    max-width: 100%;
   }
-  #isvs-2-2{
-    background-image:url('../img/background.jpg');
-    background-repeat:repeat;
-    background-position:right top;
-    background-attachment:fixed;
-    background-size:cover;
+  #io11a {
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+    color: #7b361e;
+    max-width: 320px;
+    margin: 0 auto 0 auto;
   }
-  #im9i{
-    color:black;
-    width:600px;
+  #ijcs {
+    min-height: auto;
+    overflow: hidden;
   }
-  #titulo-eco{
-    text-align:left;
-    padding:20px 0px 30px 10px;
-    font-size:135px;
-    font-weight:700;
-    font-family:EcoTypo;
-    line-height:110px;
+  #ifp5l {
+    text-align: center;
   }
-  #il64c{
-    font-family:'Montserrat Alternates', sans-serif;
-    padding:10px;
-    color:#7b361e;
+  #ifkv3 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: EcoTypo;
+    line-height: 70px;
+    display: block;
   }
-  #i1vs{
-    text-align:left;
-    max-width:350px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+  #i1vs {
+    min-height: 70px;
   }
-  #i5kh{
-      text-align:center;
-    font-family:'Montserrat Alternates', sans-serif;
-    font-size:20px;
-    bottom:auto;
-    padding:0 0 15px 10px;
-    letter-spacing:3px;
-  }
-  #i6b2n{
-    text-align:center;
-    justify-content:center;
-    padding:100px 10px 10px 10px;
-  }
-  #ijcs{
-    max-width:600px;
-  }
-  #io11a{
-    font-family:'Montserrat Alternates', sans-serif;
-    display:none;
-  }
-  #ifkv3{
-    text-align:left;
-    padding:20px 0px 30px 0px;
-    font-size:90px;
-    font-weight:700;
-    font-family:EcoTypo;
-    line-height:90px;
-    display:none;
-  }
-  @media (max-width: 768px){
-    .row{
-      flex-wrap:wrap;
-    }
-    #ijcs{
-      overflow:hidden;
-    }
-    #im9i{
-      width:112%;
-      position:relative;
-      right:12%;
-    }
-    #apresentacao{
-      flex-wrap:wrap !important;
-      padding:0 20px;
-    }
-
-    #image-container{
-      
-      justify-content:center;
-      padding:0 !important;
-      padding-top:40px !important;
-      min-width:300px;
-    }
-
-    #line{
-      display:block;
-      }
-
-    #titulo{
-     text-align:center;
-    }
-
-    #texto{
-      font-size:18px;
-      line-height:24px;
-      text-align:center;
-    }
-  }
-  @media (max-width: 480px){
-   
-   
-    #ficha-tecnica{
-      padding-left:20px;
-      padding-right:20px;
-    }
-    #ficha-texto{
-      width:98%;
-    }
-
-    #ficha-texto div{
-      padding-left:10px;
-      max-width:170px;
-    }
-
-    #logos{
-      width:90%;
-      padding-bottom:10px !important;
-    }
-
-
-   
-    #titulo-eco{
-      font-size:110px;
-      text-align:center;
-      line-height:70px;
-      display:none;
-    }
-    #il64c{
-      display:none;
-    }
-    #i5kh{
-      letter-spacing:2px;
-      width:100%;
-      max-width:100%;
-      font-size:25px;
-      text-align:center;
-      line-height:25px;
-    }
-    #i6b2n{
-      padding:20px 0px 0px 0px;
-      max-width:100%;
-    }
-    #io11a{
-      padding:20px 10px 10px 10px;
-      font-size:18px;
-      line-height:24px;
-      text-align:center;
-      display:block;
-      color:#7b361e;
-      max-width:320px;
-      margin:0 auto 0 auto;
-    }
-    #ijcs{
-      min-height:auto;
-      overflow: hidden;
-    }
-    #ifp5l{
-      text-align:center;    
-    }
-    #ifkv3{
-        text-align:center;
-        padding:10px 0px 20px 0px;
-        font-size:100px;
-        font-weight:700;
-        font-family:EcoTypo;
-        line-height:70px;
-      display:block;
-    }
-    #i1vs{
-      min-height:70px;
-    }
-  }
-  
+}
