@@ -11,6 +11,123 @@
     margin: 0;
     
   }
+
+  #apresentacao {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+
+    max-width:950px;
+    margin: 0 auto;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size:16px;
+    padding:0 50px;
+    
+  }
+
+  #image-container{
+    padding-bottom:20px;
+    min-width:400px;
+    display:flex;
+    align-items:flex-end;
+  }
+
+  #dalios {
+    
+    vertical-align:bottom;
+    width:95%;
+    height:auto;
+  }
+  #tera-container{
+    max-width:300px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end
+  }
+  #tera{
+    
+    width:85%;
+    height:auto;
+  }
+
+  #tonia{
+    
+    width:95%;
+    height:auto;
+  }
+
+  #titulo {
+    padding-left:0px;
+    text-align: left;
+    font-size: 28px;
+  }
+  
+  #texto {
+    padding-left:0px;
+    
+    text-align:justify;
+    
+  }
+
+  #line{
+    
+    margin:0 auto;
+    display:none;
+    
+    background-color:black;
+    width:99%;
+    height:5px;
+
+  }
+  #ficha-composicao {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+
+    max-width:950px;
+    margin: 0 auto;
+
+  }
+  #ficha-tecnica{
+    background:url('../img/background_red.png');
+    background-repeat:norepeat;
+    background-position:top;
+    background-attachment:scroll;
+
+    width:100%;
+    
+    
+    margin: 0px auto;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size:16px;
+    padding:200px 50px 50px;
+
+  }
+  #ficha-titulo{
+    color:#ededed;
+    text-align: center;
+    font-size: 28px;
+  }
+  #ficha-texto{
+    margin:0 auto;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:450px;
+    color:#ededed;
+  }
+
+  #ficha-texto b{
+    font-weight:500;
+  }
+
+  #logos{
+    padding:50px 0;
+    width: 350px;
+    height: auto;
+    margin:0px auto;
+  }
   .row{
     display:flex;
     justify-content:flex-start;
@@ -87,13 +204,64 @@
     .row{
       flex-wrap:wrap;
     }
-  }
-  @media (max-width: 480px){
+    #ijcs{
+      overflow:hidden;
+    }
     #im9i{
       width:112%;
       position:relative;
       right:12%;
     }
+    #apresentacao{
+      flex-wrap:wrap !important;
+      padding:0 20px;
+    }
+
+    #image-container{
+      
+      justify-content:center;
+      padding:0 !important;
+      padding-top:40px !important;
+      min-width:300px;
+    }
+
+    #line{
+      display:block;
+      }
+
+    #titulo{
+     text-align:center;
+    }
+
+    #texto{
+      font-size:18px;
+      line-height:24px;
+      text-align:center;
+    }
+  }
+  @media (max-width: 480px){
+   
+   
+    #ficha-tecnica{
+      padding-left:20px;
+      padding-right:20px;
+    }
+    #ficha-texto{
+      width:98%;
+    }
+
+    #ficha-texto div{
+      padding-left:10px;
+      max-width:170px;
+    }
+
+    #logos{
+      width:90%;
+      padding-bottom:10px !important;
+    }
+
+
+   
     #titulo-eco{
       font-size:110px;
       text-align:center;
@@ -117,7 +285,7 @@
     }
     #io11a{
       padding:20px 10px 10px 10px;
-      font-size:16px;
+      font-size:18px;
       line-height:24px;
       text-align:center;
       display:block;
@@ -127,13 +295,14 @@
     }
     #ijcs{
       min-height:auto;
+      overflow: hidden;
     }
     #ifp5l{
       text-align:center;    
     }
     #ifkv3{
         text-align:center;
-        padding:0px 0px 15px 0px;
+        padding:10px 0px 20px 0px;
         font-size:100px;
         font-weight:700;
         font-family:EcoTypo;
